@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="caixa-video-mario">
+      <video src="./IMG/video.mp4" autoplay muted loop></video>
+      <div class="mascara-video"></div>
+    </div>
+
+    <div class="caixa-principal">
+      <img src="./IMG/logo.png" alt="logo do Super Mário" class="logo-mario" />
+      <p>Encanador Mario & Luigi- Resolvendo seus problemas com Estilos!</p>
+      <p>
+        Você ja se encontrou em uma situação de emergência de encanamento?
+        Vazamentos inesperados, canos entupidos,ou torneiras que não param de
+        pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+        Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos
+      </p>
+      <button onclick="cliqueiNoBotão()">Fale conosco</button>
+    </div>
+    <img src="./IMG/mario.png" alt="Mario" class="img-mario-luigi" />
+    <form class="fale-conosco">
+      <input placeholder="Seu nome" type="text" />
+      <input placeholder="Seu Telefone" type="" />
+      <textarea placeholder="Digite seu Problema aqui"></textarea>
+      <button onclick="sumirFormulario()">Enviar Formulário</button>
+    </form>
+
+    <div class="mascara-form"></div>
+  </body>
+  <script>
+    let formulario = document.querySelector(".fale-conosco");
+    let mascara = document.querySelector(".mascara-form")
+    
+    function cliqueiNoBotão() {
+      formulario.style.left="700px"
+      mascara.style.visibility="visible"
+    }
+function sumirFormulario(){
+  formulario.style.left="-320px"
+  mascara.style.visibility="hidden"
+}
+
+  </script>
+</html>
